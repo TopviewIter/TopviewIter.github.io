@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="study," />
 
 
 
@@ -80,15 +80,25 @@
 
 
 
-<meta name="description" content="厚积薄发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="xluo's blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="构造方法默认情形：(主构造方法)123class Teacher &amp;#123;&amp;#125;
+它的等价形式：123class Teacher()&amp;#123;&amp;#125;
+私有形式：123class Teacher private &amp;#123;&amp;#125;
+由此可以看到scala与java类型都会有一个默认的无参构造方法,但有一点不同的是,在java当中,当对构造方法进行重载时,那么jvm就不会再添加">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2016-04-09-scala">
+<meta property="og:url" content="http://yoursite.com/2016/04/09/2016-04-09-scala/index.html">
 <meta property="og:site_name" content="xluo's blog">
-<meta property="og:description" content="厚积薄发">
+<meta property="og:description" content="构造方法默认情形：(主构造方法)123class Teacher &amp;#123;&amp;#125;
+它的等价形式：123class Teacher()&amp;#123;&amp;#125;
+私有形式：123class Teacher private &amp;#123;&amp;#125;
+由此可以看到scala与java类型都会有一个默认的无参构造方法,但有一点不同的是,在java当中,当对构造方法进行重载时,那么jvm就不会再添加">
+<meta property="og:updated_time" content="2016-04-09T04:36:32.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xluo's blog">
-<meta name="twitter:description" content="厚积薄发">
+<meta name="twitter:title" content="2016-04-09-scala">
+<meta name="twitter:description" content="构造方法默认情形：(主构造方法)123class Teacher &amp;#123;&amp;#125;
+它的等价形式：123class Teacher()&amp;#123;&amp;#125;
+私有形式：123class Teacher private &amp;#123;&amp;#125;
+由此可以看到scala与java类型都会有一个默认的无参构造方法,但有一点不同的是,在java当中,当对构造方法进行重载时,那么jvm就不会再添加">
 
 
 
@@ -106,7 +116,7 @@
   };
 </script>
 
-  <title> xluo's blog </title>
+  <title> 2016-04-09-scala | xluo's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -127,9 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +224,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -238,10 +246,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/04/09/2016-04-09-scala/" itemprop="url">
-                  2016-04-09-scala
-                </a>
+                2016-04-09-scala
               
             
           </h1>
@@ -280,9 +285,7 @@
       
 
       
-        
-          
-            <h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><p>默认情形：(主构造方法)<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><p>默认情形：(主构造方法)<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>它的等价形式：<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>私有形式：<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> <span class="title">private</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>由此可以看到scala与java类型都会有一个默认的无参构造方法,但有一点不同的是,在java当中,当对构造方法进行重载时,那么jvm就不会再添加默认的构造方法。辅助构造方法也只需写自己的实现即可，而在scala当中,所有的辅助构造方法都要调用其它的辅助构造方法或主构造方法,而且在<code>最终形态</code>上体现对主构造方法的调用。<br>例如下面的这个例子,当没有使用<code>this</code>对主构造方法进行调用时,则会报错：<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Teacher</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">var</span> name : <span class="type">String</span> = _</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">this</span></span>(name : <span class="type">String</span>)&#123; <span class="comment">//这里相当于重载一个构造方法</span></span><br><span class="line">    <span class="comment">//this 注释掉则会报错</span></span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -292,263 +295,57 @@
 <figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">OuterAndInterTest</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">main</span></span>(args: <span class="type">Array</span>[<span class="type">String</span>]) &#123;</span><br><span class="line">    <span class="keyword">val</span> outer = <span class="keyword">new</span> <span class="type">OuterAndInter</span>(<span class="string">"outer"</span>)</span><br><span class="line">    <span class="keyword">val</span> inner = <span class="keyword">new</span> outer.<span class="type">Inter</span>(<span class="string">"inner"</span>)</span><br><span class="line">    <span class="keyword">val</span> inner2 = <span class="keyword">new</span> outer.<span class="type">Inter2</span>(<span class="string">"inner2"</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>注意：</code><br>在创建内部类A对象的时候要注意,内部类A是依附于外部类B的实例上的,因而如果内部类中有一个方法的参数类型为A,那么当调用该方法时要注意只能传递用于调用该方法的对象的引用或者与其类型相同的引用,否是会报错。<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OuterAndInter</span>(<span class="params">name : <span class="type">String</span></span>) </span>&#123; outer =&gt; <span class="comment">//outer相当于外部类的别名,用于让内部类访问外部类的内容</span></span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">Inter</span>(<span class="params">name : <span class="type">String</span></span>)</span>&#123;</span><br><span class="line">    println(<span class="string">"wrong outer: "</span> + name + <span class="string">" inner: "</span> + <span class="keyword">this</span>.name)</span><br><span class="line">    println(<span class="string">"outer: "</span> + outer.name + <span class="string">" inner: "</span> + <span class="keyword">this</span>.name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/*</span><br><span class="line">  class Inter2(name : String)&#123;</span><br><span class="line">    println("outer: " + outer.name + " inner2: " + this.name)</span><br><span class="line">  &#125;</span><br><span class="line">  */</span></span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">Inter2</span>(<span class="params">val name : <span class="type">String</span></span>)</span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">showName</span></span>(inter2: <span class="type">Inter2</span>): <span class="type">Unit</span> =&#123;</span><br><span class="line">      println(<span class="string">"showName : "</span> + inter2.name)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">OuterAndInterTest</span></span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">main</span></span>(args: <span class="type">Array</span>[<span class="type">String</span>]) &#123;</span><br><span class="line">    <span class="keyword">val</span> outer = <span class="keyword">new</span> <span class="type">OuterAndInter</span>(<span class="string">"outer"</span>)</span><br><span class="line">    <span class="keyword">val</span> outer2 = <span class="keyword">new</span> <span class="type">OuterAndInter</span>(<span class="string">"outer2"</span>)</span><br><span class="line">    <span class="keyword">val</span> inner = <span class="keyword">new</span> outer.<span class="type">Inter2</span>(<span class="string">"inner"</span>)</span><br><span class="line">    <span class="keyword">val</span> inner2 = <span class="keyword">new</span> outer2.<span class="type">Inter2</span>(<span class="string">"inner2"</span>)</span><br><span class="line">    inner2.showName(inner2) <span class="comment">//这里的类型是outer2.Inter2,报错信息为:Type mismatch, expected: outer2.Inter2 actual: outer.Inter2</span></span><br><span class="line">    inner2.showName(inner2)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
     
     <div>
       
+        
+      
     </div>
 
     <div>
+      
+        
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/08/2016-04-08-面试总结：阿里、蘑菇街/" itemprop="url">
-                  2016-04-08-面试总结：阿里、蘑菇街
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-04-08T15:51:37+08:00" content="2016-04-08">
-              2016-04-08
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/study/" rel="tag">#study</a>
           
-            
-          
-
-          
-
-          
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="阿里"><a href="#阿里" class="headerlink" title="阿里"></a>阿里</h3><p><code>内推 -&gt; 一面 -&gt; 二面 -&gt; 三面(交叉面) -&gt; hr面 -&gt; offer</code></p>
-<h4 id="题目整理"><a href="#题目整理" class="headerlink" title="题目整理"></a>题目整理</h4><h5 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h5><blockquote>
-<p>1、说一下哪个项目对自己的成长最大（说了三个项目，分别是对自己技术PA\管理 PB\设计PC的影响）<br>2、PA项目介绍、难点<br>3、使用了webservice,那么当传递数据时,网络中断会不会导致保存两条相同的数据,因为发送端会因为传送失败而重传<br>4、简历上有写成为PA项目负责人后,提高系统稳定性。问:具体是怎样提高<br>5、PB项目使你的管理能力得到提升,具体说说<br>6、PC项目对你的设计能力有所影响,说说<br>7、项目中有没有遇到死锁的情况,是怎么解决的</p>
-</blockquote>
-<hr>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p><code>面试官:</code></p>
-<blockquote>
-<p>在最后问了面试官对自己的评价,总体来说表现还不错,做过的东西也还行。但是,有一个不足就是在回答问题的时候太过详细,应当要学会提炼自己的观点,这样别人才能抓到重点,才能更好地考察你,在回答问题的过程中,发现一面的面试官有一个特点,就是他喜欢把我的答案再经过自己的理解总结、提炼,由此也可以看出,平时总结的重要性</p>
-</blockquote>
-<p><code>我:</code></p>
-<blockquote>
-<p>整个过程觉得表现还好,在遇到不会的问题的时候会跟面试官讨论一些类似的问题,其实一开始的意图是想要避开那个问题的,后来发现真的很难很难…反正宝宝没有成功,最后还是回到了那个问题,后来是通过联系类似的东西得到了答案,其实有时候会发现,有些东西它们的思想实际上都是一样的,只不过是通过不同的方式来体现而已。</p>
-</blockquote>
-<h5 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h5><blockquote>
-<p>1、是否读研<br>2、描述一下之前难点比较多的项目<br>3、项目难点<br>4、描述其中一个难点<br>5、项目是基于ssh的，当时是怎么确定使用这套框架的<br>6、项目经历了多长时间<br>7、有什么缺点，是如何克服的<br>8、Spring bean有多少种形态，它底层是怎么实现的</p>
-</blockquote>
-<hr>
-<h5 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h5><p><code>面试官:</code></p>
-<blockquote>
-<p>因为整个面试的过程时间只有17min,所以最后没有问面试官自己的表现如何。</p>
-</blockquote>
-<h5 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h5><blockquote>
-<p>1、操作系统的职责、内存分配用到哪些算法？详说一下其中的一个算法？<br>2、操作系统如何解决内存分配碎片问题？系统运行的程序是怎么知道地址发生变化的？（这里回答了利用地址变换机制，不知道对不对）。<br>3、数据结构用过哪些排序算法，堆排的实现？<br>4、设计模式用过哪些，观察者模式的使用例子，哪些是观察者，哪些是被观察者？自己实现怎么实现，被观察者应该有哪些与观察者交互的方法？<br>5、自己实现hashmap怎么实现，java是怎么实现的。自己如何实现hash算法（这里一直听不明白他的问题。。哭），知道的hash函数算法有哪些？<br>6、哪个项目最深刻，有哪些难点，讲一下它的功能，项目多大规模<br>7、讲一下其中一个难点你是怎么解决的。这里说到了缓存，然后问是什么级别的缓存（答了内存级别的），然后问服务器有多少台，（一台，然后沉默了一下，估计想问多台主机问怎么同步缓存问题吧。）<br>8、最近看什么书，说下深入理解jvm每一章主要讲什么的。</p>
-</blockquote>
-<h5 id="hr面"><a href="#hr面" class="headerlink" title="hr面"></a>hr面</h5><blockquote>
-<p>1、自己有什么优势？<br>2、自己的一些实践经验？（上面回答了自己的项目优势）<br>3、这个项目有多少人在做，然后自己的角色是什么？<br>4、学校技术水平可以排什么位置？为什么？<br>5、topview工作室的性质？技术上是不是比较领先的工作室？<br>6、这个阶段需要提升什么地方？<br>7、以后的职业规则？<br>8、什么时候可以实习？</p>
-</blockquote>
-<h3 id="蘑菇街"><a href="#蘑菇街" class="headerlink" title="蘑菇街"></a>蘑菇街</h3><p><code>(一面后跪了,几天难以释怀...)</code></p>
-<blockquote>
-<p>1、快排的思路与时间复杂分析<br>2、描述一下所用的框架的作用，一个请求到哪里到哪里。（我是从三层架构回答各个框架的作用）<br>3、http请求到达服务器端会经历哪些阶段<br>4、有了解过分布式的相关技术<br>5、做这么多的项目的原因（兴趣）<br>6、Java里面有哪些集合是线程安全的<br>7、前端掌握了哪些js框架<br>8、Angularjs与jquery的区别，为什么要选择angularjs<br>9、垃圾回收是在什么情况下会触发<br>10、泛型机制的看法与了解<br>11、泛型擦除是运行期还是编译期<br>12、如何创建一个泛型的实例（反射）<br>13、还通过反射做过什么事情<br>14、是否用过java开发过多线程的业务（面试官的问答是排除了web的方向的，宝宝没意识到，反问了一句所有的web应用不都是多线程的吗？然后，他问你只做过web项目    对吧。坑！！）<br>15、Web中如何保证线程安全<br>16、多消费者多生产者模式能不能做成线程安全？<br>17、平时用锁多不多（用得不多，大部分逻辑都是做成线程封闭性的。。。回答用得不多是不是会印象不好啊）<br>18、对分布式框架是否有了解（项目还没有这个需求，没学）<br>19、Mysql索引的实现原理<br>20、Mysql多级索引怎么处理（多个单列索引，只会用可能性最高的那个）<br>21、有没有考虑过分布式相关东西<br>22、如果有机会接触分布式这些，是愿意继续开发web还是去学分布式的内容</p>
-</blockquote>
-<h3 id="cvte"><a href="#cvte" class="headerlink" title="cvte"></a>cvte</h3><p><code>网申 -&gt; 线上笔试 -&gt; 现场一面 -&gt; 现场二面 -&gt; offer</code></p>
-<h4 id="题目整理-1"><a href="#题目整理-1" class="headerlink" title="题目整理"></a>题目整理</h4><h5 id="一面-1"><a href="#一面-1" class="headerlink" title="一面"></a>一面</h5><blockquote>
-<p>1、手写查找0-100的素数<br>2、说一下项目的业务、难点<br>3、数据库引擎myisam、innodb的不同</p>
-<h5 id="二面-1"><a href="#二面-1" class="headerlink" title="二面"></a>二面</h5><p>1、一直在聊项目<br>2、将来是想做管理还是技术</p>
-</blockquote>
-<p><code>待续</code></p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-tags " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/04/08/2016-04-08-面试总结：阿里、蘑菇街/" rel="next" title="2016-04-08-面试总结：阿里、蘑菇街">
+                <i class="fa fa-chevron-left"></i> 2016-04-08-面试总结：阿里、蘑菇街
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/04/08/2016-04-08-plan/" itemprop="url">
-                  2016-04-08-plan
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-04-08T14:28:22+08:00" content="2016-04-08">
-              2016-04-08
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h4 id="数据结构与算法"><a href="#数据结构与算法" class="headerlink" title="数据结构与算法"></a>数据结构与算法</h4><p>1、常用算法要经常练习，理解<br>2、多刷题</p>
-<h4 id="JDK基础"><a href="#JDK基础" class="headerlink" title="JDK基础"></a>JDK基础</h4><p>1、看JDK源码，从熟悉的类看起<br>2、熟悉JDK的一些设计模式与缺陷</p>
-<h4 id="Web应用开发"><a href="#Web应用开发" class="headerlink" title="Web应用开发"></a>Web应用开发</h4><p>1、spring掌握还不够全面，要继续深入学习 - 看spring核心内幕那本书<br>2、学习netty、mina<br>3、Jvm还要继续保持了解，学习<br>4、学习osgi</p>
-<h4 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h4><p>1、看计算机网络那本书</p>
-<h4 id="大数据、云计算"><a href="#大数据、云计算" class="headerlink" title="大数据、云计算"></a>大数据、云计算</h4><p>1、学习scala<br>2、学习spark<br>3、看一些与分布式相关的书籍</p>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>1、搭建github个人主页 <code>完成</code><br>2、坚持总结、写博客</p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -556,6 +353,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -575,8 +376,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xnsl1.com1.z0.glb.clouddn.com/resume.png"
@@ -621,6 +431,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#构造方法"><span class="nav-number">1.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内部类"><span class="nav-number">2.</span> <span class="nav-text">内部类</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -709,6 +530,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
